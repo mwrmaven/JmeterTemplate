@@ -65,7 +65,7 @@ public class FileUtil {
                 tmp = text + "%2f";
                 break;
             case 4:
-                tmp = "test";
+                tmp = "kafka";
                 break;
         }
         return tmp;

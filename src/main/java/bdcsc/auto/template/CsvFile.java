@@ -18,7 +18,7 @@ import java.util.List;
  * 生成 csv 文件
  * Created by mawenrui on 2018/6/10.
  */
-public class CsvFile implements FileTemplate{
+public class CsvFile extends FileTemplate{
     private String delimiter = Config.get("delimiter").trim();
     private String product = Config.get("product").trim();
     private String module = Config.get("module").trim();

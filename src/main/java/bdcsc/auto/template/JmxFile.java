@@ -18,7 +18,7 @@ import java.util.Map;
  * 生成jmx文件
  * Created by mawenrui on 2018/6/10.
  */
-public class JmxFile implements FileTemplate{
+public class JmxFile extends FileTemplate{
     private final String interfaceName = Config.get("demand_code").trim() + "_" + Config.get("interfaceName");
     private final String variables = Config.get("variables").trim();
     private final String[] commonParas = {"Product","Module","Method","apikey","tokenid"};

@@ -14,7 +14,7 @@ import java.util.Iterator;
  * 生成脚本文件
  * Created by mawenrui on 2018/6/10.
  */
-public class XlsxFile implements FileTemplate{
+public class XlsxFile extends FileTemplate{
 
     @Override
     public void createFile(String fileUrl) {

@@ -16,7 +16,7 @@ public class Boot {
         Date begin = new Date();
         if (args.length != 0 && "help".equals(args[0])) {
             System.out.println("参数为0时，自动生成所有文件；");
-            System.out.println("参数为1时，自动生成脚本文件；");
+            System.out.println("参数为1时，自动生成测试用例文件；");
             System.out.println("参数为2时，自动生成jmx文件；");
             System.out.println("参数为3时，自动生成csv文件；");
             return;
@@ -42,7 +42,7 @@ public class Boot {
                     // 初始化配置信息
                     Config.init(product, path);
                     // 生成测试脚本
-                    factory.createFile("0", Config.getResultsUrl());
+                    factory.createFile("0".split(","), Config.getResultsUrl());
                     count++;
                 }
             }
@@ -53,7 +53,7 @@ public class Boot {
                     // 初始化配置信息
                     Config.init(product, path);
                     // 生成测试脚本
-                    factory.createFile(args[0], Config.getResultsUrl());
+                    factory.createFile(args, Config.getResultsUrl());
                     count++;
                 }
             }
