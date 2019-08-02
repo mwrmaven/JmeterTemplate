@@ -13,7 +13,7 @@
             * 配置文件.properties   
 
 
-**二、以 .properties 结尾的配置文件的解析(范本请见bdcsc.auto.examples文件夹中的文件)**
+**二、以 .properties 结尾的配置文件的解析(范本请见mavenr.auto.examples文件夹中的文件)**
 * 服务项名称和编码，即需求列表中对应需求的服务项名称和编码
 * 接口的输入参数要用 "," 分隔
 * 接口输入参数的类型(variables_type)需要与上面的(variables)一一对应
